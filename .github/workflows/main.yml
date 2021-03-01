@@ -23,12 +23,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: bryalara/VWB-MemberTracker@memberPage
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "vwb-memberpage"
-          heroku_email: "larabbryan@gmail.com"
-          usedocker: true
+      
       - name: Setup Ruby
         uses: actions/setup-ruby@v1
         with:
